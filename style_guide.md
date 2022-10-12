@@ -48,11 +48,11 @@ ROS messages should be in their own sub-package.   That way they can be easily b
 - **nodes/** This is where all your cpp files that you want to turn into executable go.  In other words every file in this directory should include an “int main()” function
 - **src/** This is where all of your c++ source files should 
 - **launch/** All launch files should be placed in this directory
-- **cfg/** this directory should include any configuration files some examples are:
+- **param/** this directory should include any configuration files some examples are:
   - parameter configurations (YAML)
   - RVIZ configurations
 - **urdf/** This directory should include any URDF for XACRO files
-- **doc/** If you are using doxygen all of your configuration should live here
+- **doc/** If you are using doxygen/readthedocs/etc.. all of your configuration and source files (.md, .rtd) should live here
 
 ### Build Sytem ###
 A standard cmake file has been created that is based on the file system described above.  There is no need to manually edit the cmakelist.txt when you add new files (although you may need to re-run cmake).  You can look at the template packages linked below as a starting point.
