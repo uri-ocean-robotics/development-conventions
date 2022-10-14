@@ -2,7 +2,7 @@ name: Pages
 on:
   push:
     branches:
-      - feature/readthedocs
+      - devel 
 jobs:
   build:
     runs-on: ubuntu-latest
