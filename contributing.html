@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using Git &mdash; URI Ocean Robotics Documentation  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Style Guide" href="style_guide.html" />
+    <link rel="prev" title="Welcome to URI Ocean Robotics Development Conventions Documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> URI Ocean Robotics Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using Git</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#branching-and-merging-strategy">Branching and Merging Strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uri-ocean-robotics-gitflow-conventions">URI Ocean Robotics Gitflow Conventions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#our-branch-prefixes">Our branch prefixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-numbering-scheme">Version Numbering Scheme</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#sofware-to-help-with-git-and-gitflow">Sofware to help with Git and GitFlow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gitkraken-and-gitflow">GitKraken and GitFlow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="style_guide.html">Style Guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">URI Ocean Robotics Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Using Git</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/contributing.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="using-git">
+<h1>Using Git<a class="headerlink" href="#using-git" title="Permalink to this heading"></a></h1>
+<div class="section" id="branching-and-merging-strategy">
+<h2>Branching and Merging Strategy<a class="headerlink" href="#branching-and-merging-strategy" title="Permalink to this heading"></a></h2>
+<p>The URI Ocean Robotics uses “gitfow” for collaborative software development.   Before you start working with lab projects please read up on this process by following the link below.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow Workflow (atlassian article)</a></p></li>
+</ul>
+<p><img alt="image" src="https://user-images.githubusercontent.com/23006525/195377078-e47d087d-46af-4a55-bda8-4b324426bc46.png" /></p>
+</div>
+<div class="section" id="uri-ocean-robotics-gitflow-conventions">
+<h2>URI Ocean Robotics Gitflow Conventions<a class="headerlink" href="#uri-ocean-robotics-gitflow-conventions" title="Permalink to this heading"></a></h2>
+<p>Please review the Atlassian tutorial before reading.</p>
+<ul class="simple">
+<li><p>Software development should occur in the “devel” branch.</p></li>
+<li><p>Minor changes that don’t change (intend) behaviors can be pushed directly to the devel branch</p></li>
+<li><p>If you want to implement a new feature you MUST create a feature branch or a personal fork.   Depending on the scope of the project you can either:</p>
+<ul>
+<li><p>merge this with the devel branch directly</p></li>
+<li><p>create a pull request to the devel branch so that other members of your team can review it before merging.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="our-branch-prefixes">
+<h3>Our branch prefixes<a class="headerlink" href="#our-branch-prefixes" title="Permalink to this heading"></a></h3>
+<p>It seems everyone has a slightly different opinion on what the branch prefixes should be called.  Make sure you use the following branch prefixes so that we are consistent across our work.</p>
+<p><strong>Branches</strong></p>
+<ul class="simple">
+<li><p><strong>Master/Main Branch:</strong> master</p></li>
+<li><p><strong>Development Branch:</strong> devel
+<strong>Prefixes</strong></p></li>
+<li><p><strong>Feature Branch:</strong> feature/</p></li>
+<li><p><strong>Release Branch:</strong> release/</p></li>
+<li><p><strong>Hotfix Branch:</strong> hotfix/</p></li>
+<li><p><strong>Version Tag:</strong>  v</p></li>
+</ul>
+</div>
+<div class="section" id="version-numbering-scheme">
+<h3>Version Numbering Scheme<a class="headerlink" href="#version-numbering-scheme" title="Permalink to this heading"></a></h3>
+<p>We use a, three field, <a class="reference external" href="https://semver.org/">Semantic Versioning</a> scheme:  a.b.c</p>
+<ul class="simple">
+<li><p><strong>c:</strong>  &lt;bugfixes, minor improvements, incremental performance improvements &gt; increment this number if you made minor changes that don’t add any major features or preformed minor bug fixes</p></li>
+<li><p><strong>b:</strong> <new features> increment this number if you added a significant new feature that won’t change the behavior of existing code</p></li>
+<li><p><strong>a:</strong> <breaking changes> Increment this number if you made significant changes to the code that alters the behavior or existing parts software.</p></li>
+</ul>
+<p>For more details read up on <a class="reference external" href="https://semver.org/">Semantic Versioning 2.0</a></p>
+<p><strong>some examples:</strong></p>
+<p>If I have a package that depends on version 1.1.1  it is not guaranteed to work with version 2.0.0</p>
+<p>If I have a package that depends on version 1.1.1 it is guaranteed to work with version 1.2.0 or 1.1.2</p>
+<p>If I have a package that depends on version 1.2.2 is should work with the older version 1.2.1 but may not work with 1.1.x since it may depend on a new feature added.</p>
+</div>
+</div>
+<div class="section" id="sofware-to-help-with-git-and-gitflow">
+<h2>Sofware to help with Git and GitFlow<a class="headerlink" href="#sofware-to-help-with-git-and-gitflow" title="Permalink to this heading"></a></h2>
+<p>This branching/merging strategy may seem overwhelming via command line.   If you are new to Git, it is recommended that you use Git Kraken to help you manage complex git tasks and visualize this branching strategy in action.</p>
+<p>As a student, you can get the full pro version for free by following the instructions on <a class="reference external" href="https://www.gitkraken.com/github-student-developer-pack">this page</a>.</p>
+<div class="section" id="gitkraken-and-gitflow">
+<h3>GitKraken and GitFlow<a class="headerlink" href="#gitkraken-and-gitflow" title="Permalink to this heading"></a></h3>
+<p>GitKraken has native support for GitFlow.  Follow the instructions here to set it up.  Just make sure your set  your prefixes Correctly according to the branch names and prefixes set above in this document.</p>
+<p>Keep in mind this configuration needs to be set for EACH repo you work on.  This is not a global setting.</p>
+<p>https://help.gitkraken.com/gitkraken-client/git-flow/</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/23006525/195403892-e64e1c1b-21c4-475e-9a0c-2aa2b89eec84.png" /></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to URI Ocean Robotics Development Conventions Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="style_guide.html" class="btn btn-neutral float-right" title="Style Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Kristopher Krasnosky, Emir Cem Gezer.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
