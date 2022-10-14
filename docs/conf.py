@@ -9,7 +9,7 @@
 import sphinx_rtd_theme
 
 project = 'URI Ocean Robotics Documentation'
-copyright = '2022, Kristopher Krasnosky, Emir Cem Gezer'
+copyright = '2022, URI Ocean Robotics'
 author = 'URI Ocean Robotics Authors'
 
 # -- General configuration ---------------------------------------------------
@@ -21,7 +21,10 @@ extensions = [
     'sphinx.ext.imgmath',
     'sphinx.ext.githubpages',
     'sphinx_rtd_theme',
+    'sphinx.ext.autosectionlabel',
     'myst_parser',
+    'hoverxref.extension',
+
 ]
 
 templates_path = ['_templates']
@@ -38,3 +41,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_static_path = ['_static']
 html_theme = "sphinx_rtd_theme"
+
+# Make sure the target is unique
+autosectionlabel_prefix_document = True

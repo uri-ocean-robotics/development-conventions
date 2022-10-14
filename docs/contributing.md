@@ -1,6 +1,10 @@
-# Using Git #
+---
+label: using-git
+---
 
-## Branching and Merging Strategy ##
+# Using Git
+
+## Branching and Merging Strategy
 
 The URI Ocean Robotics uses “gitfow” for collaborative software development.   Before you start working with lab projects please read up on this process by following the link below.
 
@@ -10,7 +14,7 @@ The URI Ocean Robotics uses “gitfow” for collaborative software development.
 ![image](https://user-images.githubusercontent.com/23006525/195377078-e47d087d-46af-4a55-bda8-4b324426bc46.png)
 
 
-## URI Ocean Robotics Gitflow Conventions  ##
+## URI Ocean Robotics Gitflow Conventions
 
 Please review the Atlassian tutorial before reading.
 
@@ -20,7 +24,7 @@ Please review the Atlassian tutorial before reading.
   - merge this with the devel branch directly
   - create a pull request to the devel branch so that other members of your team can review it before merging.
 
-### Our branch prefixes  ###
+### Our branch prefixes
 
 It seems everyone has a slightly different opinion on what the branch prefixes should be called.  Make sure you use the following branch prefixes so that we are consistent across our work.
 
@@ -33,7 +37,7 @@ It seems everyone has a slightly different opinion on what the branch prefixes s
 - **Hotfix Branch:** hotfix/
 - **Version Tag:**  v
 
-### Version Numbering Scheme ###
+### Version Numbering Scheme
 
 We use a, three field, [Semantic Versioning](https://semver.org/) scheme:  a.b.c
 
@@ -52,13 +56,13 @@ If I have a package that depends on version 1.1.1 it is guaranteed to work with 
 If I have a package that depends on version 1.2.2 is should work with the older version 1.2.1 but may not work with 1.1.x since it may depend on a new feature added.
 
 
-## Sofware to help with Git and GitFlow ##
+## Sofware to help with Git and GitFlow
 
 This branching/merging strategy may seem overwhelming via command line.   If you are new to Git, it is recommended that you use Git Kraken to help you manage complex git tasks and visualize this branching strategy in action.
 
 As a student, you can get the full pro version for free by following the instructions on [this page](https://www.gitkraken.com/github-student-developer-pack).
 
-### GitKraken and GitFlow ###
+### GitKraken and GitFlow
 
 GitKraken has native support for GitFlow.  Follow the instructions here to set it up.  Just make sure your set  your prefixes Correctly according to the branch names and prefixes set above in this document.
 
