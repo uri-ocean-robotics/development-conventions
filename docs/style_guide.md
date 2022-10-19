@@ -52,7 +52,7 @@ ROS messages should be in their own sub-package.   That way they can be easily b
   - parameter configurations (YAML)
   - RVIZ configurations
 - **urdf/** This directory should include any URDF for XACRO files
-- **doc/** If you are using doxygen/readthedocs/etc.. all of your configuration and source files (.md, .rtd) should live here
+- **docs/** If you are using doxygen/readthedocs/etc.. all of your configuration and source files (.md, .rtd) should live here
 
 ### Build Sytem ###
 A standard cmake file has been created that is based on the file system described above.  There is no need to manually edit the cmakelist.txt when you add new files (although you may need to re-run cmake).  You can look at the template packages linked below as a starting point.
