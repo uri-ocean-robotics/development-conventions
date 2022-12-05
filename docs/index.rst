@@ -1,25 +1,23 @@
-.. URI Ocean Robotics Documentation documentation master file, created by
+.. documentation master file, created by
    sphinx-quickstart on Thu Oct 13 22:19:25 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to URI Ocean Robotics Development Conventions Documentation
+Our Development conventions
 ===================================================================
 
 
 Quick Links
 ===========
 
-- :any:`Git usage and contribution guideline <contributing>`
-- :any:`Coding style guide <style_guide>`
-- :any:`Makeing a repository public guideline<repository_publication_guidelines>`
-
 .. toctree::
-   :hidden:
+   :maxdepth: 2
 
-   contributing
+   templates/index
    style_guide
    repository_publication_guidelines
+   version_control
+   license
 
 
 .. Indices and tables
