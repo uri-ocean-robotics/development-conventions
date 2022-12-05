@@ -22,8 +22,7 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx_rtd_theme',
     'sphinx.ext.autosectionlabel',
-    'myst_parser',
-    'hoverxref.extension',
+    'myst_parser'
 
 ]
 
