@@ -1,5 +1,7 @@
 # Licensing Guidelines #
 
+This document describes some of the licenses we recommend for use in our projects.   Please review them and pick the one that works best for your project
+
 ## BSD-3 ##
 
 BSD-3 is the preferred license for ROS1 packages.  It is a permissive license that:
