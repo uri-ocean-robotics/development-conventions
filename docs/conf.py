@@ -8,7 +8,7 @@
 
 import sphinx_rtd_theme
 
-project = 'URI Ocean Robotics Documentation'
+project = 'URI Ocean Robotics Development And Deployment Conventions'
 copyright = '2022, URI Ocean Robotics'
 author = 'URI Ocean Robotics Authors'
 
